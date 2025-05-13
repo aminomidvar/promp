@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haikuish Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        #haikuish { font-size: 24px; margin-top: 20px; }
+        button { font-size: 18px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Haikuish Generator</h1>
+    <button onclick="generateHaikuish()">Generate Haikuish</button>
+    <p id="haikuish"></p>
+
+    <script>
+        const lines = [
+            ["Silent moon whispers", "Autumn leaves fall gently", "Night echoes softly"],
+            ["Stars flicker above", "Wind hums a quiet story", "Dreams fade into dawn"],
+            ["Cherry blossoms sway", "Clouds dance across the blue sky", "Footsteps on wet grass"]
+        ];
+
+        function generateHaikuish() {
+            let poem = lines[Math.floor(Math.random() * lines.length)];
+            document.getElementById("haikuish").innerHTML = poem.join("<br>");
+        }
+    </script>
+</body>
+</html>

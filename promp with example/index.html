@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Sum Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px; font-size: 16px; }
+        .container { margin-top: 20px; font-size: 18px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Random Sum Calculator</h1>
+    <p>Click the button to generate random numbers and see their sum!</p>
+    <button onclick="calculateSum()">Generate</button>
+    
+    <div class="container">
+        <p><strong>Generated Array:</strong> <span id="numbers"></span></p>
+        <p><strong>Sum in Dollars:</strong> <span id="result"></span></p>
+    </div>
+</body>
+</html>

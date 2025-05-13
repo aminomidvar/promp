@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Form</h1>
+        <form id="budgetForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" required>
+
+            <label for="spent">Spent:</label>
+            <input type="number" id="spent" name="spent" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Submitted Budgets</h2>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
